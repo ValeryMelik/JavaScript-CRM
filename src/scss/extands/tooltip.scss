@@ -1,0 +1,58 @@
+.tooltip {
+  position: relative;
+
+  &:hover {
+    .tooltip__text {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: -80%;
+    @extend %centerX;
+
+    z-index: 1;
+
+    min-width: 133px;
+
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+
+    background-color: $black;
+    text-align: center;
+    padding: 7px 12px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+    &_debug {
+      top: -50%;
+      transform: translate(-50%, -100%);
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: $firm;
+    }
+    &:active {
+      color: $firm_shade;
+    }
+  }
+
+  &__rectanglesvg {
+    position: absolute;
+    top: 99%;
+    @extend %centerX;
+
+    fill: $black;
+
+    width: 14px;
+    height: 7px;
+  }
+}

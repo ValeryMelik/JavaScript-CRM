@@ -1,0 +1,30 @@
+.spinner {
+  position: absolute;
+  left: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 16px;
+
+  @include unvisible;
+
+  svg {
+    width: 12px;
+    height: 13px;
+
+    animation: rotate-item reverse 1s linear infinite;
+  }
+}
+
+@keyframes rotate-item {
+  0% {
+    transform: none;
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}

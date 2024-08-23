@@ -1,0 +1,9 @@
+mixin svg(id, parent)
+  svg(class=`svg-reset ${parent}__${id}`): use(xlink:href=`img/sprite.svg#${id}`)
+
+mixin inpbl(cls, snl, text)
+  div(class=`${cls}__inpbl`)
+    label(for=`${snl}` class=`${cls}__label`)=text
+      if (snl!='lastName')
+        span(class=`${cls}__rfstar`) *
+    input(data-name=snl name=snl type='text' class=`${cls}__input` id=`${snl}`)

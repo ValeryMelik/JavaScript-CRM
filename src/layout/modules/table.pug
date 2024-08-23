@@ -1,0 +1,30 @@
+table.main__table.table
+  thead.table__thead.thead
+    tr.thead__row 
+      th.thead__item
+        button(data-order='asc')#id.btn-reset.thead__btn
+          span.thead__capture ID 
+          +svg('arrowsvg', 'thead')
+      th.thead__item
+        button(data-order='none')#snl.btn-reset.thead__btn
+          span.thead__capture Фамилия Имя 
+            span.sticky-word Отчество #[+svg('arrowsvg', 'thead')]
+              span.thead__sorting.sorting
+                span.sorting__asc А&#8209;Я
+                span.sorting__desc Я&#8209;А
+      th.thead__item 
+        button(data-order='none')#created.btn-reset.thead__btn
+          span.thead__capture Дата и время #[span.sticky-word создания #[+svg('arrowsvg','thead')]]
+      th.thead__item 
+        button(data-order='none')#updated.btn-reset.thead__btn
+          span.thead__capture Последние #[span.sticky-word изменения #[+svg('arrowsvg','thead')]]
+      th.thead__item
+        button#contacts.btn-reset.thead__btn
+          span.thead__capture Контакты
+      th.thead__item
+        button#actions.btn-reset.thead__btn
+          span.thead__capture Действия
+  tbody#tbody.table__tbody.tbody
+    tr.tbody__row
+      td(colspan=6).tbody__item.tbody__item_empty
+        +svg('m-loadsvg', 'tbody')

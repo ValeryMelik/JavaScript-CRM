@@ -1,0 +1,43 @@
+%center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%centerX {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+%centerY {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%spinner {
+  &__spinner {
+    position: absolute;
+    left: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+
+    visibility: 0;
+    opacity: 0;
+
+    transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  &__loadsvg {
+    width: 12px;
+    height: 13px;
+
+    animation: rotate-item normal 1s linear infinite;
+  }
+}
+
+

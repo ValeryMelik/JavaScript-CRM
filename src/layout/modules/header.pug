@@ -1,0 +1,7 @@
+.header 
+  .header__container.container 
+    .header__logo 
+      +svg('logosvg', 'header')
+      span.header__capture CRM
+    input(type="text" placeholder="Введите запрос" list="items").header__input    
+    datalist(id="items").header__datalist

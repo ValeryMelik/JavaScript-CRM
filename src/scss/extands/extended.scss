@@ -1,0 +1,13 @@
+.extended {
+  max-height: 500px;
+
+  overflow-y: scroll;
+
+  .tooltip__text {
+    left: -20px;
+
+    .tooltip__rectanglesvg {
+      left: 99px;
+    }
+  }
+}

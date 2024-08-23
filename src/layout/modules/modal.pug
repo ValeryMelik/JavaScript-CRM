@@ -1,0 +1,35 @@
+.modal
+  form(action="submit").modal__formwin
+    .modal__wall
+    .modal__container
+      button(type='button').btn-reset.modal__bclose 
+        +svg('closesvg', 'modal')
+      .modal__add-block
+        h2.margin-reset.modal__title Новый клиент 
+        +inpbl('modal', 'surname', 'Фамилия')
+        +inpbl('modal', 'name', 'Имя')
+        +inpbl('modal', 'lastName', 'Отчество')
+        .modal__addbl.addbl 
+          ul.list-reset.addbl__list 
+          button(type='button').btn-reset.addbl__btn 
+            span.addbl__addicon 
+              span +
+            span.addbl__bcapture Добавить контакт
+        .modal__errorbl.errorbl
+      .modal__rem-block
+        h2.margin-reset.modal__title.modal__title_remove Удалить клиента
+        p.margin-reset.modal__dcaption Вы действительно хотите удалить данного клиента?
+      .modal__prmbl.prmbl
+        button(type='submit' disabled).btn-reset.prmbl__sbtn
+          span.prmbl__spinner.spinner #[+svg('loadsvg', 'prmbl')]
+          span.prmbl__capture Сохранить
+        button(type='button').btn-reset.prmbl__cbtn Отмена
+  .modal__errorwin.errorwin
+    h2.margin-reset.errorwin__title Что-то пошло не так...
+    p.margin-reset.errorwin__text
+      span.errorwin__capture
+    .errorwin__btnbl 
+      button.btn-reset.errorwin__btn Перезагрузить страницу
+      button.btn-reset.errorwin__btn Попробовать снова
+    
+          

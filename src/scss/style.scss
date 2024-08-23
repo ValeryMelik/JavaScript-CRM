@@ -1,0 +1,28 @@
+// tools:
+@import "tools/_variables.scss";
+@import "tools/_templates.scss";
+@import "tools/_mixins.scss";
+
+// common styles:
+@import "common/fonts.scss";
+@import "common/normalize.scss";
+@import "common/style-reset.scss";
+
+// extands:
+@import "./extands/container";
+@import "./extands/unvisible";
+@import "./extands/error-input";
+@import "./extands/tooltip";
+@import "./extands/spinner.scss";
+@import "./extands/stop-scroll.scss";
+@import "./extands/extended.scss";
+@import "./extands/appearance.scss";
+
+// modules:
+@import "modules/header.scss";
+@import "modules/main.scss";
+@import "modules/table.scss";
+@import "modules/modal.scss";
+
+// media:
+@import "media/media.scss";
