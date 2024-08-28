@@ -23,7 +23,7 @@
 Установка зависимостей:
 
 ```shell
-cd crm-backend/ && npm install && cd ../ && npm install
+    cd crm-backend/ && npm install && cd ../ && npm install
 ```
 
 Запуск сервера:
